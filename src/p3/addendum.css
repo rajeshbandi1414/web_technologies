@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image:url('https://media.istockphoto.com/id/178414064/photo/blue-spot-lights.webp?b=1&s=170667a&w=0&k=20&c=5aDLTDPiXeocPrNZzafEblW18gvx9rrSVnKKtB9aHRM=');
+  background-size:cover;
+  color:black;
+}
+
+h1 {
+  text-align: center;
+  color:black;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+a {
+  display: inline-block; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+   background-color: #008080; 
+  color: Black; 
+  border-radius: 5px; 
+  
+  width: 120px;
+  text-align: center; 
+  line-height: 40px; 
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+  background-color: #337ab7; 
+}
