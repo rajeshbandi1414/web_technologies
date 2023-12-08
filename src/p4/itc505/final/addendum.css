@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image:url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00MjItMDczLWt6cGhnMjR1LmpwZw.jpg');
+  background-size:cover;
+  color:black;
+}
+
+h1 {
+  text-align: center;
+  color:black;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+a {
+  display: inline-block; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+   background-color: #008080; 
+  color: Black; 
+  border-radius: 5px; 
+  
+  width: 120px;
+  text-align: center; 
+  line-height: 40px; 
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+  background-color: #337ab7; 
+}
