@@ -6,6 +6,34 @@
 <link rel="stylesheet" href="addendum.css">
 
 <body>
+    <h1>Detailed Explanation of JavaScript Game Code</h1>
+    <p>This document provides an in-depth explanation of the JavaScript code for a grid-based puzzle game, focusing on its structure and functionality.</p>
+    
+    <h2>1. Initial Configuration</h2>
+    <p>The script begins by acquiring a reference to the 'board' element in the DOM, designated as the main area for the game. It then sets up an array 'squares' to hold the elements that will form the individual squares of the game.</p>
+
+    <h2>2. Function: toggleSquare(index)</h2>
+    <p>Triggered by a click event on a square, this function takes the square's index to determine its actions. It calculates the grid position of the square and identifies the squares surrounding it (including itself) for interaction. The function then alternates the 'is-off' class on these squares, changing their display state.</p>
+
+    <h2>3. Checking Game Progress: checkGameState()</h2>
+    <p>This function runs post-interaction to evaluate if the game objectives have been met. It checks if all squares have achieved an 'off' state, indicated by the 'is-off' class, leading to a victory message via 'displayWin()'. If specific undefined conditions involving 'moves' and 'MAX_MOVES' are fulfilled, it triggers a loss via 'displayLoss()'.</p>
+
+    <h2>4. Win/Loss Notifications: displayWin() and displayLoss()</h2>
+    <p>These functions serve to notify the player of their game status through alert messages.</p>
+
+    <h2>5. Game Restart: newGame()</h2>
+    <p>Initiates a new game by calling 'resetBoard()' to set up the board.</p>
+
+    <h2>6. Resetting the Game Board: resetBoard()</h2>
+    <p>Iterates over the squares, toggling their state randomly to set a new starting configuration for the game.</p>
+
+    <h2>7. Building the Game Board</h2>
+    <p>A loop creates the square elements, adds them to the 'board', and stores them in the 'squares' array. Each square is made clickable.</p>
+
+    <h2>8. Game Kickoff</h2>
+    <p>The script calls 'newGame()' to initialize the game setup for the first play-through.</p>
+
+    
     <h1>Insights into Crafting a JavaScript Puzzle Game</h1>
 
     <h2>Initial Design Phase</h2>
