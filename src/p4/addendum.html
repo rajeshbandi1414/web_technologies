@@ -37,6 +37,32 @@
     <p>User-Centric Approach: Minimalist UI for win indication and cell feedback.</p>
     <p>Challenge: Balancing simplicity with effective player communication.</p>
     <p>Execution: Used basic UI elements for win alerts and interactive feedback.</p>
+    <h1>Interactive Grid Game JavaScript Code Explanation</h1>
+    <p>This document provides a comprehensive explanation of the JavaScript code for an interactive grid-based game.</p>
+    
+    <h2>1. Board Setup</h2>
+    <p>The script starts by linking to the 'board' element in the DOM, defining the game's play area. It initializes an array named 'squares' to hold the square elements of the board.</p>
+
+    <h2>2. Function: toggleSquare(index)</h2>
+    <p>Activated by clicking a square, this function uses the square's index to determine its next steps. It figures out the square's location in a grid and selects the neighboring squares for interaction. The function alternates the 'is-off' class on these squares, changing their visual appearance.</p>
+
+    <h2>3. Game Status Check: checkGameState()</h2>
+    <p>After each square interaction, this function assesses whether the game's end conditions have been met. It verifies if all squares are in the 'off' state (indicated by the 'is-off' class) for a win, triggering 'displayWin()'. If certain conditions related to 'moves' and 'MAX_MOVES' are fulfilled, it indicates a loss with 'displayLoss()'.</p>
+
+    <h2>4. Display Functions for Win/Loss: displayWin() and displayLoss()</h2>
+    <p>These functions provide alerts to the player about the outcome of the game.</p>
+
+    <h2>5. Starting a New Game: newGame()</h2>
+    <p>Calls 'resetBoard()' to begin a new game.</p>
+
+    <h2>6. Board Reconfiguration: resetBoard()</h2>
+    <p>Randomly changes the state of each square to prepare a new starting position for the game.</p>
+
+    <h2>7. Assembling the Game Board</h2>
+    <p>A loop creates the squares, incorporates them into the 'board', and sets them up for interaction.</p>
+
+    <h2>8. Initiating the Game</h2>
+    <p>The game is set up for the first time with the execution of 'newGame()'.</p>
 
     <h2>Learnings from the Process</h2>
     <ul>
