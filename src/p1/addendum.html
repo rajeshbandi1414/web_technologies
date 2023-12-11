@@ -44,7 +44,33 @@
         <li>Understanding the nuances of code dependencies and detailed editing.</li>
         <li>Reaffirming the importance of thorough testing for a seamless player experience.</li>
     </ul>
-
     <p>Conclusion: This process underscored the delicate interplay between coding finesse, user experience, and the adaptability of game mechanics. It highlighted the significance of strategic planning and comprehensive testing in game development.</p>
+    <h1>JavaScript Game Code Explanation</h1>
+    <p>This document provides a detailed explanation of the JavaScript code for a grid-based puzzle game.</p>
+    
+    <h2>1. Setup Phase</h2>
+    <p>Retrieves a reference to the DOM element identified as 'board', which serves as the game's playing field. Initializes an array named 'squares' that will later store the individual square elements of the board.</p>
+
+    <h2>2. Functionality: toggleSquare(index)</h2>
+    <p>Activated upon a square click, this function receives the square's index as an argument. Determines the square's position in a 5x5 matrix using mathematical calculations. Identifies adjacent square indices (top, bottom, left, right, and the square itself) for interaction. Applies or removes the class 'is-off' to these adjacent squares, altering their state (likely representing 'on' or 'off').</p>
+
+    <h2>3. Game State Assessment: checkGameState()</h2>
+    <p>Executes after toggling squares to evaluate the game's progress. Verifies if every square on the board carries the 'is-off' class, signaling player success and triggering 'displayWin'. In case certain conditions with 'moves' and 'MAX_MOVES' are met, the function initiates 'displayLoss' to indicate the game's end.</p>
+
+    <h2>4. Alert Functions: displayWin() and displayLoss()</h2>
+    <p>These straightforward functions exhibit alerts, either congratulating for a win or indicating a loss.</p>
+
+    <h2>5. Initiating a New Round: newGame()</h2>
+    <p>Calls upon 'resetBoard()' to commence a fresh game.</p>
+
+    <h2>6. Board Reset: resetBoard()</h2>
+    <p>Loops through each square, randomly adding or removing the 'is-off' class to reset the game's initial state.</p>
+
+    <h2>7. Board Construction</h2>
+    <p>Iteratively constructs a 5x5 grid by creating 'div' elements, styling them as squares, and appending them to the 'board'. Stores these elements in the 'squares' array and assigns them an event listener to manage clicks.</p>
+
+    <h2>8. Starting the Game</h2>
+    <p>Invokes 'newGame()' to prepare the board for the inaugural game.</p>
+
 </body>
 </html>
